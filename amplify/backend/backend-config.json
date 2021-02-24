@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "incognitoappbackupbc63554d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
