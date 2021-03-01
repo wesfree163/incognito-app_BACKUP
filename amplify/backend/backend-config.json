@@ -1,6 +1,6 @@
 {
   "auth": {
-    "incognitoappbackupbc63554d": {
+    "incognitoapp1a55e0de": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

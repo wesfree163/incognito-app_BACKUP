@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-incognitoappbackup-dev-150205-authRole",
-      "UnauthRoleArn": "arn:aws:iam::991712646320:role/amplify-incognitoappbackup-dev-150205-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::991712646320:role/amplify-incognitoappbackup-dev-150205-authRole",
+      "AuthRoleName": "amplify-incognitoapp-dev-145027-authRole",
+      "UnauthRoleArn": "arn:aws:iam::991712646320:role/amplify-incognitoapp-dev-145027-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::991712646320:role/amplify-incognitoapp-dev-145027-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-incognitoappbackup-dev-150205-deployment",
-      "UnauthRoleName": "amplify-incognitoappbackup-dev-150205-unauthRole",
-      "StackName": "amplify-incognitoappbackup-dev-150205",
-      "StackId": "arn:aws:cloudformation:us-east-1:991712646320:stack/amplify-incognitoappbackup-dev-150205/2ddf5ae0-76db-11eb-82fd-0ad252bd0169",
-      "AmplifyAppId": "d25c9wby7mfr75"
+      "DeploymentBucketName": "amplify-incognitoapp-dev-145027-deployment",
+      "UnauthRoleName": "amplify-incognitoapp-dev-145027-unauthRole",
+      "StackName": "amplify-incognitoapp-dev-145027",
+      "StackId": "arn:aws:cloudformation:us-east-1:991712646320:stack/amplify-incognitoapp-dev-145027/0cd3b240-7935-11eb-8ffc-0aaeca0d89d1",
+      "AmplifyAppId": "d2j1x3buvq6p9c"
     },
     "categories": {
       "auth": {
-        "incognitoappbackupbc63554d": {}
+        "incognitoapp1a55e0de": {}
       }
     }
   }

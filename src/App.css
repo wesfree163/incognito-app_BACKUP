@@ -3,44 +3,40 @@
   font-family: sans-serif;
 }
 
-.ContainerA{
+.ContainerA {
   background-color: beige;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   text-align: center;
   color: black;
   height: 90px;
   width: 600px;
-  box-shadow: 2px 2px 5px #bcbcbc, 
-            -3px -3px 6px #dfdfdf;
+  box-shadow: 2px 2px 5px #bcbcbc, -3px -3px 6px #dfdfdf;
 }
-
-.ContainerB{
+.ContainerB {
   background-color: #63bcff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-align: center;
   margin-top: 30px;
   font-weight: 300;
   color: black;
   height: 60px;
   width: 480px;
-  box-shadow: 2px 2px 5px #598095, 
-            -3px -3px 6px #cacdcd;
+  box-shadow: 2px 2px 5px #598095, -3px -3px 6px #cacdcd;
 }
 
-.select{
+.select {
   background-color: #63bcff;
-  border-radius: .9rem;
+  border-radius: 0.9rem;
   position: absolute;
-  margin-left: 420px;
+  right: -21vh;
   height: 27px;
   width: 96px;
   top: -27px;
 
-  box-shadow: 2px 2px 5px #598095, 
-            -3px -3px 6px #cacdcd;
+  box-shadow: 2px 2px 5px #598095, -3px -3px 6px #cacdcd;
 }
 
-.sort{
+.sort {
   background-color: transparent;
   position: absolute;
   border-radius: 1em;
@@ -49,7 +45,7 @@
   top: 3px;
 }
 
-.Add{
+.Add {
   background-color: transparent;
   margin-top: 15px;
   border: none;
@@ -63,22 +59,21 @@
   bottom: 15px;
   outline: none;
   resize: 80%;
-  box-shadow: 2px 2px 5px #bcbcbc, 
-            -3px -3px 6px #dfdfdf;
+  box-shadow: 2px 2px 5px #bcbcbc, -3px -3px 6px #dfdfdf;
 }
 
-.search{
+.search {
   position: absolute;
   margin-left: 420px;
   top: 18px;
   outline: none;
 }
 
-.submit{
+.submit {
   background-color: #0051ff;
   border-color: #0051ffb3;
   color: azure;
-  border-radius: .9em;
+  border-radius: 0.9em;
   position: absolute;
   height: 45px;
   width: 150px;
@@ -95,7 +90,7 @@
   left: 90px;
 }
 
-.user{
+.user {
   position: relative;
   border-radius: 2em;
   height: 60px;
@@ -105,15 +100,14 @@
   top: -42px;
 }
 
-.logo{
+.logo {
   position: relative;
   height: 54px;
   width: 54px;
   right: 72px;
   bottom: 42px;
   border-radius: 2em;
-  box-shadow: 2px 2px 5px #bcbcbc, 
-            -3px -3px 6px #dfdfdf;
+  box-shadow: 2px 2px 5px #bcbcbc, -3px -3px 6px #dfdfdf;
 }
 
 .navButton {
@@ -122,7 +116,7 @@
   text-align: center;
   position: relative;
   border-radius: 1em;
-  margin-left:15px;
+  margin-left: 15px;
   outline: none;
   height: 39px;
   width: 90px;
