@@ -82,6 +82,110 @@
   outline: none;
 }
 
+.submit2{
+  background-color: #63bcff;
+  position: absolute;
+  border-color: transparent;
+  text-decoration: none;
+  right: -60px;
+  width: 75px;
+  height: 30px;
+  bottom: -240px;
+  border-radius: .9em;
+  box-shadow: 2px 2px 5px #598095, -3px -3px 6px #cacdcd;
+}
+
+.AddInfo{
+  background-color: #63bcff;
+  position: absolute;
+  border-color: transparent;
+  text-decoration: none;
+  right: -60px;
+  width: 80px;
+  height: 30px;
+  bottom: -360px;
+  border-radius: .9em;
+  box-shadow: 2px 2px 5px #598095, -3px -3px 6px #cacdcd;
+}
+
+
+/*  */
+.header{
+  position: fixed;
+  top: 25px;
+}
+
+.row{
+  position: relative;
+  float: left;
+  border: 1px solid yellow;
+  overflow: visible;
+  white-space: nowrap;
+  width: 21vw;
+  top: 150px;
+}
+
+.inputList{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 60%;
+}
+
+.inputAdd{
+  position: fixed;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;;
+  border: 1px solid yellow;
+  overflow: visible;
+  white-space: nowrap;
+  top: 250px;
+  left: 27px;
+}
+
+.inputSub{
+  position: fixed;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: right;;
+  border: 1px solid yellow;
+  overflow: visible;
+  white-space: nowrap;
+  top: 550px;
+  right: 27px;
+}
+/*  */
+
+
+/*  */
+.ViewsContent{
+  display: grid;
+  grid-template-columns: 125px 450px;
+  grid-template-rows: 42px 42px 420px;
+}
+
+.set1{
+  background-color: #0051ff;
+}
+.set2{
+  background-color: greenyellow;
+}
+.set3{
+  background-color: blueviolet;
+}
+.set4{
+  background-color: mediumvioletred;
+}
+.set5{
+  background-color: forestgreen;
+}
+.set6{
+  background-color: ghostwhite;
+}
+/*  */
+
+
 .bar {
   position: absolute;
   display: flex;
@@ -122,6 +226,15 @@
   width: 90px;
   right: 54px;
   top: -36px;
+}
+
+.navigation{
+  position: relative;
+  text-decoration: none;
+  font-size: medium;
+  margin: 12px;
+  top: -36px;
+  right: 54px;
 }
 
 .App-logo {

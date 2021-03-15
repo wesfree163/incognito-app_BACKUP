@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ilogo from './img/ilogo.png';
 import userI from './img/userIcon.png';
 import Button from 'react-bootstrap/Button';
@@ -7,7 +7,11 @@ import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import {AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import AddRemove from './components/AddRemove';
+import Home from './components/Home';
+import Navigation from './components/Navigation';
+import Views from './components/Views';
 
 Amplify.configure(awsconfig);
 
@@ -18,15 +22,28 @@ function App() {
     backgroundColor: '#d8d8d8c4'
   }}>
     
-    <h2>Incognito App</h2>
+    {/* <h2>Incognito App</h2> */}
 
     <div className="bar" style={{
       width: '64%'
     }}> 
       <img src={ilogo} className="logo" alt="inc-logo"/>
-      <Button className="navButton">Home</Button>
-      <Button className="navButton" onClick>Create Hierarchy</Button>
-      <Button className="navButton">Hierarchy</Button>  
+      <a href="/Home" className="navigation">Home</a>
+      <a href="/AddRemove" className="navigation">Create Hierarchy</a>
+      <a href="/Views" className="navigation">Page 3</a>
+      {/* <Button className="navButton">Hierarchy</Button>   */}
+
+      <BrowserRouter>
+        <div>
+          {/* <Navigation /> */}
+            <Switch>
+              <Route path="/AddRemove" component={AddRemove} exact/>
+              <Route path="/Views" component={Views} exact/>
+              <Route path="/Home" component={Home} exact/>
+            </Switch>
+        </div> 
+      </BrowserRouter>
+
 
       {/* <div className="navButton search">
         <SearchField className style={{}}/>
@@ -37,24 +54,24 @@ function App() {
         <button className="sort">▼</button>
       </div>
 
-      <img src={userI} className="user" alt="user-logo"/> 
+      {/* <img src={userI} className="user" alt="user-logo"/>  */}
     </div>
 
-    <div className="ContainerA">
+    {/* <div className="ContainerA"> */}
       {/* <Button className=""></Button>  */}
-      <h4>Region</h4>
-    </div>
+      {/* <h4>Region</h4> */}
+    {/* </div> */}
 
-    <div className="ContainerB">
+    {/* <div className="ContainerB"> */}
       {/* <Button className=""></Button>  */}
       {/* <button className="Add">Add Field</button> */}
-    </div>
+    {/* </div> */}
 
     {/* <div className="navButton search">
       <SearchField className style={{}}/>
     </div> */}
     
-    <Button className="submit">Submit</Button> 
+    {/* <Button className="submit">Submit</Button>  */}
     <AmplifySignOut className="AmplifySignOut"/> 
   </header>
 </div>
