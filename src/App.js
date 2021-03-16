@@ -72,7 +72,7 @@ function App() {
     </div> */}
     
     {/* <Button className="submit">Submit</Button>  */}
-    <AmplifySignOut className="AmplifySignOut"/> 
+    {/* <AmplifySignOut className="AmplifySignOut"/>  */}
   </header>
 </div>
 
@@ -80,4 +80,5 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+// export default withAuthenticator(App);
+export default App;
