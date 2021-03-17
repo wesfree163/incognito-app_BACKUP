@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import ilogo from './img/ilogo.png';
-import userI from './img/userIcon.png';
-import Button from 'react-bootstrap/Button';
-import './App.css';
 import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import AddRemove from './components/AddRemove';
+import './App.css';
+import ilogo from './img/ilogo.png';
 import Home from './components/Home';
-import Navigation from './components/Navigation';
+import awsconfig from './aws-exports';
 import Views from './components/Views';
+import userI from './img/userIcon.png';
+import Button from 'react-bootstrap/Button';
+import AddRemove from './components/AddRemove';
+import Navigation from './components/Navigation';
 
 Amplify.configure(awsconfig);
 
