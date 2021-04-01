@@ -5,7 +5,11 @@ import {AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react';
 
 import './App.css';
 import ilogo from './img/ilogo.png';
+
+
 import Home from './components/Home';
+
+
 import awsconfig from './aws-exports';
 import Views from './components/Views';
 import userI from './img/userIcon.png';
@@ -13,7 +17,7 @@ import Button from 'react-bootstrap/Button';
 import AddRemove from './components/AddRemove';
 import Navigation from './components/Navigation';
 
-Amplify.configure(awsconfig);
+// Amplify.configure(awsconfig);
 
 function App() {
   return (
@@ -24,13 +28,36 @@ function App() {
     
     {/* <h2>Incognito App</h2> */}
 
+
+
+  
+
+
+
+
+
     <div className="bar" style={{
       width: '64%'
     }}> 
       <img src={ilogo} className="logo" alt="inc-logo"/>
-      <a href="/Home" className="navigation">Home</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <a href="/" className="navigation">Home</a>
       <a href="/AddRemove" className="navigation">Create Hierarchy</a>
-      <a href="/Views" className="navigation">Page 3</a>
+      <a href="/Views" className="navigation">Page 2</a>
       {/* <Button className="navButton">Hierarchy</Button>   */}
 
       <BrowserRouter>
@@ -39,20 +66,50 @@ function App() {
             <Switch>
               <Route path="/AddRemove" component={AddRemove} exact/>
               <Route path="/Views" component={Views} exact/>
-              <Route path="/Home" component={Home} exact/>
+              <Route path="/" component={Home} exact/>
             </Switch>
         </div> 
       </BrowserRouter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       {/* <div className="navButton search">
         <SearchField className style={{}}/>
       </div> */}
 
-      <div className="select">
+      {/* <div className="select">
         ---
         <button className="sort">▼</button>
-      </div>
+      </div> */}
 
       {/* <img src={userI} className="user" alt="user-logo"/>  */}
     </div>
@@ -72,7 +129,7 @@ function App() {
     </div> */}
     
     {/* <Button className="submit">Submit</Button>  */}
-    <AmplifySignOut className="AmplifySignOut"/> 
+    {/* <AmplifySignOut className="AmplifySignOut"/>  */}
   </header>
 </div>
 
@@ -80,4 +137,6 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+// export default withAuthenticator(App);
+
+export default App;

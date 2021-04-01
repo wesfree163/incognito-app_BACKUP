@@ -110,38 +110,47 @@
 
 
 /*  */
+div{
+  position: relative;
+}
+
+
 .header{
-  position: fixed;
-  top: 25px;
+  position: relative;
+  top: -9vh;
 }
 
 .row{
-  position: relative;
+  position: sticky;
   float: left;
   border: 1px solid yellow;
   overflow: visible;
   white-space: nowrap;
   width: 21vw;
   top: 150px;
+  /* left: -300px; */
 }
+
+
 
 .inputList{
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 60%;
+  left: ;
 }
 
 .inputAdd{
   position: fixed;
   margin-top: 15px;
   margin-bottom: 15px;
-  float: left;;
+  float: left;
   border: 1px solid yellow;
   overflow: visible;
   white-space: nowrap;
-  top: 250px;
-  left: 27px;
+  top: 200px;
+  left: 39vw;
 }
 
 .inputSub{
@@ -161,27 +170,43 @@
 /*  */
 .ViewsContent{
   display: grid;
-  grid-template-columns: 125px 450px;
-  grid-template-rows: 42px 42px 420px;
+  right: 9vh;
+  margin-top: 27px;
+  min-width: 72px;
+  border-style: solid;
+  border-color: black;
+  border-radius: .3em;
+  grid-template-columns: 18vw 18vw 18vw 18vw;
+  box-shadow: 2px 2px 5px #0000004e, -3px -3px 6px #cacdcd;
 }
 
 .set1{
-  background-color: #0051ff;
+  color: black;
+  margin: 2px;
+  border-style: solid;
+  border-radius: .2em;
+  border-color: rgba(26, 26, 26, 0.674);
 }
 .set2{
-  background-color: greenyellow;
+  color: black;
+  margin: 2px;
+  border-style: solid;
+  border-radius: .2em;
+  border-color: rgba(26, 26, 26, 0.674);
 }
 .set3{
-  background-color: blueviolet;
+  color: black;
+  margin: 2px;
+  border-style: solid;
+  border-radius: .2em;
+  border-color: rgba(26, 26, 26, 0.674);
 }
 .set4{
-  background-color: mediumvioletred;
-}
-.set5{
-  background-color: forestgreen;
-}
-.set6{
-  background-color: ghostwhite;
+  color: black;
+  margin: 2px;
+  border-style: solid;
+  border-radius: .2em;
+  border-color: rgba(26, 26, 26, 0.674);
 }
 /*  */
 
@@ -242,11 +267,15 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+
+@media only screen and (min-width: 992px) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
-}
+}}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  
+} */
 
 .App-header {
   background-color: #f4f4f4;
@@ -262,6 +291,12 @@
 .App-link {
   color: #61dafb;
 }
+
+
+/* .inputs{
+  left: -10px;
+} */
+
 
 @keyframes App-logo-spin {
   from {

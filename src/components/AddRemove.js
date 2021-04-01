@@ -2,7 +2,11 @@ import React from 'react';
 import { useState } from 'react';
 
 function AddRemove() {
-    const [values, setValues] = useState({ val: []});
+
+  // can use to define values in back end to have parent nodes: val: []
+  // next page is columnar by category 
+  // how to provide parent nodes only first
+    const [values, setValues] = useState({ val: [] }); 
 
       function createInputs() {
         return values.val.map((el, i) =>
@@ -38,10 +42,16 @@ function AddRemove() {
     return (
       
       <form onSubmit={handleSubmit} className="parentForm">
+        
+        
         <div className="header">
           <h1>Company A</h1>
           <h2>New Hierarchy</h2>
         </div>
+
+
+
+
           {createInputs()}
           <div className="inputs">
             <input type='button' value='Add Header' onClick={addClick} className="inputAdd"/>
