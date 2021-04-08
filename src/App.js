@@ -57,7 +57,7 @@ function App() {
 
       <a href="/" className="navigation">Home</a>
       <a href="/AddRemove" className="navigation">Create Hierarchy</a>
-      <a href="/Views" className="navigation">Page 2</a>
+      <a href="/Views" className="navigation">Add Data</a>
       {/* <Button className="navButton">Hierarchy</Button>   */}
 
       <BrowserRouter>
